@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+:root { /* Light background */
+  --text-color: #333333; /* Dark text color */
+}
+
+html[data-theme="dark"] {
+  --background: #0a0a0a; /* Dark background */
+  --text-color: #e0e0e0; /* Light text color */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color); /* Use the text color variable */
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(
+    --text-color
+  ); /* Ensure text elements use the text color variable */
+}
+
+@layer base {
+  :root {
+  --radius: 0.5rem
+ }
+}
