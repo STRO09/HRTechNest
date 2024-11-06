@@ -105,7 +105,7 @@ export const SkeletonOne = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <Image
-            src="/linear.webp"
+            src="https://aceternity.com/images/products/thumbnails/new/editrix.png"
             alt="header"
             width={800}
             height={800}

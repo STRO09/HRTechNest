@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../styles/admin-globals.css";
+import { SidebarDemo } from "./pages/sidebardemo";
 import {
   ClerkProvider,
   SignedIn,
@@ -36,15 +37,28 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ClerkProvider afterSignOutUrl="/admin">
-          <header className="flex justify-between">
-            <UserButton showName />
-          </header>
           <main>
             <SignedOut>
               {/* Redirect to Clerk's sign-in page */}
               <RedirectToSignIn />
             </SignedOut>
-            <SignedIn>{children}</SignedIn>
+            <SignedIn>
+              <div className="flex h-screen">
+                {/* Sidebar */}
+                <aside className="w-64 bg-gray-800 text-white fixed h-full">
+                  <SidebarDemo />
+                </aside>
+
+                {/* Main content area */}
+                <div className="flex flex-col flex-grow ml-64">
+                  <header className="p-4 bg-gray-100 border-b">
+                    <UserButton showName />
+                  </header>
+
+                  <main className="flex-grow p-6 bg-white">{children}</main>
+                </div>
+              </div>
+            </SignedIn>
           </main>
         </ClerkProvider>
       </body>

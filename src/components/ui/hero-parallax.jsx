@@ -97,19 +97,19 @@ export const Header = () => {
   const jobPostings = [
     {
       title: "Software Engineer",
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSfHTvWMlv88O45KmxNyTU08ZxUB31gfARKTUBgoh2bHqOAz3w/viewform?usp=sf_link",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSeAJM00Y8gjWWWEC4E2ao4BaHC4v9yPZYDwUbcUCIUJaDZfiw/viewform?usp=sf_link",
     },
     {
       title: "Data Scientist",
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSfHTvWMlv88O45KmxNyTU08ZxUB31gfARKTUBgoh2bHqOAz3w/viewform?usp=sf_link",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSeAJM00Y8gjWWWEC4E2ao4BaHC4v9yPZYDwUbcUCIUJaDZfiw/viewform?usp=sf_link",
     },
     {
       title: "Devops Engineer",
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSfHTvWMlv88O45KmxNyTU08ZxUB31gfARKTUBgoh2bHqOAz3w/viewform?usp=sf_link",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSeAJM00Y8gjWWWEC4E2ao4BaHC4v9yPZYDwUbcUCIUJaDZfiw/viewform?usp=sf_link",
     },
     {
       title: "UI/UX Designer",
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSfHTvWMlv88O45KmxNyTU08ZxUB31gfARKTUBgoh2bHqOAz3w/viewform?usp=sf_link",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSeAJM00Y8gjWWWEC4E2ao4BaHC4v9yPZYDwUbcUCIUJaDZfiw/viewform?usp=sf_link",
     },
     {
       title: "Cyber Security Analyst",
@@ -120,7 +120,7 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        The Ultimate <br /> development studio
+        HRTechNest <br />
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
         We build beautiful products with the latest technologies and frameworks.
