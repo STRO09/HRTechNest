@@ -96,19 +96,11 @@ export const HeroParallax = ({ products }) => {
 export const Header = () => {
   const jobPostings = [
     {
-      title: "Software Engineer",
+      title: "Web Developer",
       url: "https://docs.google.com/forms/d/e/1FAIpQLSeAJM00Y8gjWWWEC4E2ao4BaHC4v9yPZYDwUbcUCIUJaDZfiw/viewform?usp=sf_link",
     },
     {
       title: "Data Scientist",
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSeAJM00Y8gjWWWEC4E2ao4BaHC4v9yPZYDwUbcUCIUJaDZfiw/viewform?usp=sf_link",
-    },
-    {
-      title: "Devops Engineer",
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSeAJM00Y8gjWWWEC4E2ao4BaHC4v9yPZYDwUbcUCIUJaDZfiw/viewform?usp=sf_link",
-    },
-    {
-      title: "UI/UX Designer",
       url: "https://docs.google.com/forms/d/e/1FAIpQLSeAJM00Y8gjWWWEC4E2ao4BaHC4v9yPZYDwUbcUCIUJaDZfiw/viewform?usp=sf_link",
     },
     {
