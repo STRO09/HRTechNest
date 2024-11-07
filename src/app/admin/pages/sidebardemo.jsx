@@ -15,6 +15,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { UserButton } from "@clerk/nextjs";
 
 export function SidebarDemo() {
   const links = [
@@ -53,7 +54,7 @@ export function SidebarDemo() {
       className={cn(
         "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 max-w-7xl mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
         // for your use case, use `h-screen` instead of `h-[60vh]`
-        "h-[60vh]"
+        "h-screen"
       )}
     >
       <Sidebar open={open} setOpen={setOpen}>
@@ -62,26 +63,12 @@ export function SidebarDemo() {
             {open ? <Logo /> : <LogoIcon />}
             <div className="mt-8 flex flex-col gap-2">
               {links.map((link, idx) => (
-                <SidebarLink key={idx} link={link} />
+                <SidebarLink keysidebar={idx} link={link} />
               ))}
             </div>
           </div>
           <div>
-            <SidebarLink
-              link={{
-                label: "Manu Arora",
-                href: "#",
-                icon: (
-                  <Image
-                    src="https://assets.aceternity.com/manu.png"
-                    className="h-7 w-7 flex-shrink-0 rounded-full"
-                    width={50}
-                    height={50}
-                    alt="Avatar"
-                  />
-                ),
-              }}
-            />
+            <UserButton />
           </div>
         </SidebarBody>
       </Sidebar>
@@ -125,7 +112,7 @@ const Dashboard = () => {
         <div className="flex gap-2">
           {[...new Array(4)].map((i) => (
             <div
-              key={"first-array" + i}
+              keysidebar={"first-array" + i}
               className="h-20 w-full rounded-lg  bg-gray-100 dark:bg-neutral-800 animate-pulse"
             ></div>
           ))}
@@ -133,7 +120,7 @@ const Dashboard = () => {
         <div className="flex gap-2 flex-1">
           {[...new Array(2)].map((i) => (
             <div
-              key={"second-array" + i}
+              keysidebar={"second-array" + i}
               className="h-full w-full rounded-lg  bg-gray-100 dark:bg-neutral-800 animate-pulse"
             ></div>
           ))}
